@@ -32,22 +32,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                     <li>
-                        <a class="btn btn-danger" href="#" role="button">Home</a>
+                        <a class="btn" href="#" role="button">Home</a>
                     </li>
                     <li>
-                        <a class="btn btn-warning" href="#" role="button">About</a>
+                        <a class="btn" href="#" role="button">About</a>
                     </li>
                     <li>
-                        <a class="btn btn-dark" href="#" role="button">Education</a>
+                        <a class="btn" href="#" role="button">Projects</a>
                     </li>
                     <li>
-                        <a class="btn btn-success" href="#" role="button">Projects</a>
+                        <a class="btn" href="#" role="button">Contact</a>
                     </li>
                     <li>
-                        <a class="btn btn-secondary" href="#" role="button">Contact</a>
-                    </li>
-                    <li>
-                    <a class="btn btn-info" href="#" role="button">Resume</a>
+                    <a class="btn" href="#" role="button">Resume</a>
                     </li>
                   </ul>
                 </div>
@@ -59,15 +56,12 @@
                 <div class="row">
                     <div class="col-md-6 home-description">
                         <p class="home-introduction">- Hi, My name is</p>
-                        <p class="home-title">Christian Verdida.</p>
+                        <p class="home-title">Christian <span id="surname">Verdida.</span></p>
                         <p class="home-title-introduction">
                             I always thought to be a Game Developer one day I have experienced
                             of 2 years in Unity as a self study, and also I'm a Full - Stack 
                             Web Developer Student at Kodego.
                         </p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="Images/output-onlinegiftools.gif" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -89,7 +83,7 @@
                     <div class="card">
                         <div class="row">
                             <div class="col-md-4">
-                                <img class="img-fluid rounded-start" src="Images/Profile.jpg" alt="profile">
+                                <img class="img-fluid rounded-start profile" src="Images/Profile.jpg" alt="profile">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -105,12 +99,22 @@
                                             development careers by working in industry or freelancing.
                                         </p>
                                         <p class="card-text">
+                                            My education, Christian Light Academy (Elementary 2009-2015)                                                                                    
+                                        </p>
+                                        <p class="card-text">
+                                            Western Bicutan National (Highschool 2015-2019)
+                                        </p>     
+                                        <p class="card-text">
+                                            MCA Montessori School, Inc. (Senior High School 2019-2021)
+                                        </p>                                                                              
+                                        <p class="card-text">
                                             Here are a few technologies I've been working with recently :
                                         </p>
                                     <div class="d-flex justify-content-center technologies">
                                         <img src="Images/HTMLtech.png">
                                         <img src="Images/CSStech.png">
                                         <img src="Images/CSHARPtech.png">
+                                        <img src="Images/output-onlinegiftools.gif" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -119,8 +123,45 @@
                 </div>
             </div>
         </section>
+        <!-------------------------PROJECTS SECTION------------------------------------->
+        <section id="projects-section">
+            <div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" 
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-        
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target=
+                    "#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target=
+                    "#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>         
+                </div>
+            </div>
+        </section>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
         crossorigin="anonymous"></script>
