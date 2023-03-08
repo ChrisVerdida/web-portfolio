@@ -7,7 +7,7 @@ body {
 }
 /*HEADER SECTION*/
 #header-section {
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 10;
@@ -56,19 +56,15 @@ body {
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
-
 .btn:active {
     color: #000
 }
-
 .btn:active:after {
     background: transparent;
 }
-
 .btn:hover:before {
     opacity: 1;
 }
-
 .btn:after {
     z-index: -1;
     content: '';
@@ -97,6 +93,7 @@ body {
     background-image: url(Images/output-onlinegiftools_1.gif);
     color: #fff;
     padding-top: 5%;
+    height: 100vh;
 }
 .home-introduction {
     font-family: 'Dancing Script', cursive;
@@ -122,8 +119,8 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
 }
-.bottom-img {
-    margin-top: 120px;
+#home-section .bottom-img {
+    margin-top: 295px;
     width: 100%;
 }
 /*SOCIAL MEDIA SECTION*/
@@ -164,11 +161,43 @@ body {
     margin-left: 50px;
     z-index: -1;
 }
-.container {
+#about-me-section .container {
     margin-top: 150px;
 }
 .profile {
     height: 100%;
+}
+#about-me-section .container {
+    position: relative;
+    width: 100%;
+    padding: 9px;
+    overflow: hidden;
+}
+#about-me-section .container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#00ccff, #d500f9);
+    animation: rotate 4s linear infinite;
+}
+#about-me-section .container::after {
+    content: '';
+    position: absolute;
+    background: #0e1538;
+    inset: 5px;
+    border-radius: 16px;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.card {
+    z-index: 5;
 }
 .card-title {
     font-family: 'Tilt Warp', cursive;
@@ -188,9 +217,13 @@ body {
 .technologies > img {
     width: 20%;
 }
+.bottom-img {
+    margin-top: 295px;
+    width: 100%;
+}
 /*PROJECTS SECTION*/
 #projects-section {
    background-color: aqua;
-   position: relative;
-   margin-top: 850px;
+   position: static;
+   margin-top: 150vh;
 }
