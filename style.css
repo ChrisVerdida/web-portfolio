@@ -161,16 +161,17 @@ body {
     margin-left: 50px;
     z-index: -1;
 }
-#about-me-section .container {
-    margin-top: 150px;
-}
 .profile {
     height: 100%;
+}
+/*BORDER ANIMATION*/
+#about-me-section .container {
+    margin-top: 150px;
 }
 #about-me-section .container {
     position: relative;
     width: 100%;
-    padding: 9px;
+    padding: 10px;
     overflow: hidden;
 }
 #about-me-section .container::before {
