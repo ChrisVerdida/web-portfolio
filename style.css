@@ -7,7 +7,7 @@ body {
 }
 /*HEADER SECTION*/
 #header-section {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
@@ -93,7 +93,10 @@ body {
     background-image: url(Images/output-onlinegiftools_1.gif);
     color: #fff;
     padding-top: 5%;
-    height: 100vh;
+    height: 100%;
+}
+.home-description {
+    margin-top: 200px;
 }
 .home-introduction {
     font-family: 'Dancing Script', cursive;
@@ -120,7 +123,7 @@ body {
     font-size: 1.25rem;
 }
 #home-section .bottom-img {
-    margin-top: 295px;
+    margin-top: 320px;
     width: 100%;
 }
 /*SOCIAL MEDIA SECTION*/
@@ -157,22 +160,19 @@ body {
 }
 /*ABOUT ME SECTION*/
 #about-me-section {
-    position: absolute;
-    margin-left: 50px;
     z-index: -1;
+    position: absolute;
+    width: 100%;
 }
 .profile {
     height: 100%;
 }
 /*BORDER ANIMATION*/
 #about-me-section .container {
-    margin-top: 150px;
-}
-#about-me-section .container {
     position: relative;
-    width: 100%;
     padding: 10px;
     overflow: hidden;
+    margin-top: 20vh;
 }
 #about-me-section .container::before {
     content: '';
@@ -218,13 +218,87 @@ body {
 .technologies > img {
     width: 20%;
 }
-.bottom-img {
-    margin-top: 295px;
-    width: 100%;
-}
 /*PROJECTS SECTION*/
 #projects-section {
-   background-color: aqua;
-   position: static;
-   margin-top: 150vh;
+    position: absolute;
+    width: 100%;
+    height: 320vh;
+    margin-top: 170vh;
+    z-index: -1;
+}
+.activity-one {
+    position: absolute;
+    margin-top: 30vh;
+}
+.activity-two {
+    position: absolute;
+    margin-top: 120vh;
+}
+.activity-three {
+    position: absolute;
+    margin-top: 215vh;
+}
+.activity-four {
+    position: absolute;
+    margin-top: 300vh;
+}
+/*SKILLS SECTION*/
+#skills-section {
+    position: absolute;
+    margin-top: 600vh;
+    margin-left: 3vw;
+    z-index: -2;
+    padding-top: 100px;
+}
+.jumbotron h1 {
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.skill-text {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.fullname h2 {
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 4.375rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+#surname-second {
+    color: #FCA311;
+}
+.progress-bar {
+    background-color: rgb(119, 25, 119);
+}
+.bar-one {
+    width: 85%;
+}
+.bar-two {
+    width: 40%;
+}
+.bar-three {
+    width: 50%;
+}
+.bar-four {
+    width: 30%;
+}
+.bar-five {
+    width: 86%;
+}
+.bar-six {
+    width: 45%;
+}
+/*FOOTER SECTION*/
+#footer-section {
+    background-color: #111;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    margin-top: 810vh;
+    z-index: -2;
 }
