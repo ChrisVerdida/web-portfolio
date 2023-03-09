@@ -214,43 +214,20 @@ body {
 }
 .technologies {
     margin-right: 400px;
+    margin-left: 50px;
 }
 .technologies > img {
     width: 20%;
 }
-/*PROJECTS SECTION*/
-#projects-section {
-    position: absolute;
-    width: 100%;
-    height: 320vh;
-    margin-top: 170vh;
-    z-index: -1;
-}
-.activity-one {
-    position: absolute;
-    margin-top: 30vh;
-}
-.activity-two {
-    position: absolute;
-    margin-top: 120vh;
-}
-.activity-three {
-    position: absolute;
-    margin-top: 215vh;
-}
-.activity-four {
-    position: absolute;
-    margin-top: 300vh;
-}
 /*SKILLS SECTION*/
 #skills-section {
     position: absolute;
-    margin-top: 600vh;
+    margin-top: 200vh;
     margin-left: 3vw;
     z-index: -2;
     padding-top: 100px;
 }
-.jumbotron h1 {
+#skills-section .jumbotron > h1 {
     font-family: 'Tilt Warp', cursive;
     color: black;
     font-size: 3rem;
@@ -262,7 +239,7 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
 }
-.fullname h2 {
+.fullname > h2 {
     font-family: 'Tilt Warp', cursive;
     color: black;
     font-size: 4.375rem;
@@ -293,12 +270,79 @@ body {
 .bar-six {
     width: 45%;
 }
+.jumbotron > h1 {
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.offer {
+    text-align: center;
+}
+.offer > img {
+    height: 10vh;
+}.offer .text-1 {
+    text-align: center;
+    margin-right: 30px;
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.offer .text-2 {
+    text-align: center;
+    margin-right: 2px;
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.offer .text-3 {
+    text-align: center;
+    margin-right: 2px;
+    font-family: 'Tilt Warp', cursive;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/*PROJECTS SECTION*/
+#projects-section {
+    position: absolute;
+    width: 100%;
+    height: 320vh;
+    margin-top: 420vh;
+    z-index: -1;
+}
+.activity-one {
+    position: absolute;
+    margin-top: 30vh;
+}
+.activity-two {
+    position: absolute;
+    margin-top: 115vh;
+}
+.activity-three {
+    position: absolute;
+    margin-top: 200vh;
+}
+.activity-four {
+    position: absolute;
+    margin-top: 300vh;
+}
+.activity-five {
+    position: absolute;
+    margin-top: 400vh;
+}
+.activity-six {
+    position: absolute;
+    margin-top: 500vh;
+}
 /*FOOTER SECTION*/
 #footer-section {
     background-color: #111;
     width: 100%;
     height: 50vh;
     position: absolute;
-    margin-top: 810vh;
+    margin-top: 1000vh;
     z-index: -2;
 }
