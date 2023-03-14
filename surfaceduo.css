@@ -1,0 +1,421 @@
+@media only screen and (max-width: 720px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        font-family: sans-serif;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /*=======================HEADER SECTION=======================*/
+    #header-section {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+    }
+    #header-section .navbar {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 0 !important;
+    }
+    #header-section .navbar-brand img {
+        height: 90px;
+        padding-left: 20px;
+        cursor: url(Images/BlackCursorSecond.png), auto;
+    }
+    #header-section .navbar-nav li {
+        padding: 0 10px;
+    }
+    #header-section .navbar-nav li a {
+        width: 100px;
+        color: rgb(54, 47, 47);
+        font-weight: 600;
+        float: right;
+        text-align: left;    
+    }
+    /*BUTTON KEYFRAMES*/
+    #header-section .btn {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        cursor: url(Images/BlackCursorSecond.png), auto;
+    }
+    #header-section .btn:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
+        #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    #header-section .btn:active {
+        color: #000
+    }
+    #header-section .btn:active:after {
+        background: transparent;
+    }
+    #header-section .btn:hover:before {
+        opacity: 1;
+    }
+    #header-section .btn:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+    #header-section .fa-bars {
+        color: #fff;
+        font-size: 1.875rem !important;
+    }
+    #header-section .navbar-toggler {
+        outline: none !important;
+    }
+
+
+    /*=======================HOME SECTION=======================*/
+    #home-section {
+        background-image: url(Images/output-onlinegiftools_1.gif);
+        color: #fff;
+        padding-top: 5%;
+        height: 100%;
+    }
+    #home-section .home-description {
+        margin-top: 200px;
+    }
+    #home-section .home-introduction {
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        position: absolute;
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 3.125rem;
+    }
+    #surname {
+        color: #FCA311;
+    }
+    #home-section .home-title {
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 4.375rem;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+    #home-section .home-title-introduction {
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    #home-section .bottom-img {
+        margin-top: 320px;
+        width: 100%;
+    }
+
+
+    /*=======================SOCIAL MEDIA SECTION=======================*/
+    #social-media-section .icon-bar {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #social-media-section .icon-bar a {
+        display: block;
+        color: black;
+        font-size: 1.563rem;
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 25px;
+        padding: 25px;
+        cursor: url(Images/BlackCursorSecond.png), auto;
+    }
+    #social-media-section .icon-bar a:hover {
+        color: #FCA311;
+        animation-duration: 0.5s;
+        animation-name: socmeds;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes socmeds {
+        from {
+        transform: scale(1);
+        }
+        to {
+        transform: scale(1.3);
+        }
+    }
+
+
+    /*=======================ABOUT ME SECTION=======================*/
+    #about-me-section {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+    }
+    #about-me-section .profile {
+        height: 100%;
+    }
+    /*BORDER ANIMATION*/
+    #about-me-section .container {
+        position: relative;
+        padding: 10px;
+        overflow: hidden;
+        margin-top: 20vh;
+    }
+    #about-me-section .card {
+        background-image: url(Images/whitehexagon.gif);
+    }
+    #about-me-section .container::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#00ccff, #d500f9);
+        animation: rotate 4s linear infinite;
+    }
+    #about-me-section .container::after {
+        content: '';
+        position: absolute;
+        background: #0e1538;
+        inset: 5px;
+        border-radius: 16px;
+    }
+    @keyframes rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    #about-me-section .card {
+        z-index: 5;
+    }
+    #about-me-section .card-title {
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    #about-me-section .card-text {
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    #about-me-section .technologies {
+        margin-right: 500px;
+        margin-left: 50px;
+    }
+    #about-me-section .technologies > img {
+        width: 20%;
+        z-index: -1;
+    }
+
+
+    /*=======================SKILLS SECTION=======================*/
+    #skills-section {
+        position: absolute;
+        margin-top: 185vh;
+        margin-left: 3vw;
+        z-index: -2;
+        padding-top: 100px;
+    }
+    #skills-section .jumbotron > h1 {
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    #skills-section .skill-text {
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    #skills-section .fullname > h2 {
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 4.375rem;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+    #surname-second {
+        color: #FCA311;
+    }
+    #skills-cursor {
+        cursor: url(Images/BlackCursorFirst.png), auto;
+    }
+    #skills-section .progress-bar {
+        background-color: rgb(119, 25, 119);
+    }
+    #skills-section .bar-one {
+        width: 60%;
+    }
+    #skills-section .bar-two {
+        width: 20%;
+    }
+    #skills-section .bar-three {
+        width: 30%;
+    }
+    #skills-section .bar-four {
+        width: 30%;
+    }
+    #skills-section .bar-five {
+        width: 86%;
+    }
+    #skills-section .bar-six {
+        width: 45%;
+    }
+    #skills-section .jumbotron > h1 {
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    #skills-section .offer {
+        text-align: center;
+    }
+    #skills-section .offer > img {
+        height: 10vh;
+    }
+    #skills-section .offer .text-1 {
+        text-align: center;
+        margin-right: 30px;
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #skills-section .offer .text-2 {
+        text-align: center;
+        margin-right: 2px;
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #skills-section .offer .text-3 {
+        text-align: center;
+        margin-right: 2px;
+        font-family: 'Tilt Warp', cursive;
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    /*=======================PROJECTS SECTION=======================*/
+    #projects-section {
+        position: absolute;
+        width: 100%;
+        height: 320vh;
+        margin-top: 410vh;
+        z-index: -1;
+    }
+    #projects-section .container {
+        margin-top: 100px;
+    }
+    #projects-section .card {
+        position: relative;
+        overflow: hidden;
+    }
+    #projects-section .card:before {
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 220%;
+        background: rgba(0, 0, 0, 0.68);
+        top: -50%;
+        left: -100%;
+        z-index: 1;
+        transform: rotate(25deg);
+        transform-origin: center top 0;
+        transition: .5s;
+    }
+    #projects-section .card:hover:before {
+        left: 10%;
+    }
+    #projects-section .card img {
+        width: 100%;
+        height: auto;
+    }
+    #projects-section .card-text {
+        width: 100%;
+        padding: 0 20px;
+        position: absolute;
+        top: -100%;
+        color: #fff;
+        left: 0;
+        z-index: 2;
+        transition: 1.1s;
+    }
+    #projects-section .card-text h3 {
+        font-family: 'Tilt Warp', cursive;
+        color: #FCA311;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    #projects-section .card:hover .card-text {
+        top: 80px;
+    }
+
+
+    /*=======================FOOTER SECTION=======================*/
+    #footer-section {
+        position: absolute;
+        margin-top: 700vh;
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+    }
+    #footer-logo > img {
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 100px;
+    }
+    #footer-section .footer-color {
+        background-image: url(Images/footerGif.gif);
+    }
+    #footer-section .text-dark {
+        text-decoration: none;
+    }
+    #footer-section .footer-title {
+        font-family: 'Tilt Warp', cursive;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #footer-section .copyright {
+        text-decoration: none;
+    }
+    #footer-section .copyright-title {
+        color: #FCA311;
+    }
+}
