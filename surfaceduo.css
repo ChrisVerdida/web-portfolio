@@ -10,7 +10,6 @@
         overflow-x: hidden;
     }
 
-
     /*=======================HEADER SECTION=======================*/
     #header-section {
         position: fixed;
@@ -25,7 +24,6 @@
     #header-section .navbar-brand img {
         height: 90px;
         padding-left: 20px;
-        cursor: url(Images/BlackCursorSecond.png), auto;
     }
     #header-section .navbar-nav li {
         padding: 0 10px;
@@ -45,7 +43,6 @@
         position: relative;
         z-index: 0;
         border-radius: 10px;
-        cursor: url(Images/BlackCursorSecond.png), auto;
     }
     #header-section .btn:before {
         content: '';
@@ -154,7 +151,6 @@
         margin-top: 20px;
         margin-right: 25px;
         padding: 25px;
-        cursor: url(Images/BlackCursorSecond.png), auto;
     }
     #social-media-section .icon-bar a:hover {
         color: #FCA311;
@@ -231,7 +227,7 @@
         font-size: 1.25rem;
     }
     #about-me-section .technologies {
-        margin-right: 500px;
+        margin-right: 200px;
         margin-left: 50px;
     }
     #about-me-section .technologies > img {
@@ -269,9 +265,6 @@
     }
     #surname-second {
         color: #FCA311;
-    }
-    #skills-cursor {
-        cursor: url(Images/BlackCursorFirst.png), auto;
     }
     #skills-section .progress-bar {
         background-color: rgb(119, 25, 119);

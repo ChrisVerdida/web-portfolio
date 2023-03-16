@@ -390,7 +390,7 @@ html, body {
 /*=======================FOOTER SECTION=======================*/
 #footer-section {
     position: absolute;
-    margin-top: 900vh;
+    margin-top: 700vh;
     width: 100%;
     height: 400px;
     z-index: -1;
