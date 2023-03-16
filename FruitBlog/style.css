@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: white;
+    height: 80px;
+    display: flex; /*COLUMN ROW*/
+    justify-content: space-between;
+}
+.website-logo {
+    margin: 20px;
+}
+.navigation {
+    background-color: white;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.navigation > li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none; /*TO AVOID THE UNDERLINE TAG*/
+    color: black;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: #28b873;
+}
+.about-us:hover .about-us-subnav {
+    visibility: visible;
+    margin-top: -2px;     
+    opacity: 1;           
+}
+.about-us-subnav {
+    visibility: hidden;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 65px;
+    margin-left: -10px;
+    margin-top: 15px;      
+    transition-duration: 0.3s;   
+    opacity: 0;  
+}
+.about-us-subnav > li > a:hover {
+    background-color: #28B873;
+}
+.about-us-subnav > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.socmed-links {
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-brands {
+    color: black;
+}
+.header-content {
+    display: none;
+}
+@keyframes changewidth {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+}
+.fa-brands:hover {
+    color: #28B873;
+    animation-duration: 0.5s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.hero-banner {
+    background-image: linear-gradient(to bottom right, #FBE6FF, white); 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.main-recipe-content {
+    background-image: linear-gradient(to bottom right, #28b873, white);
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.recipe-list {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.recipe-container {
+    background-color: white;
+    width: 45%;
+    margin-top: 5px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recipe-label {
+    background-color: #28B873;
+    position: absolute;
+    padding: 3px;
+}
+.recipe-image {
+    width: 100%;
+    height: 100%;
+}
+.recipe-title {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.recipe-description {
+    margin-top: 15px;
+    font-size: .8rem;
+}
+.recipe-other-info {
+    margin-top: 15px;
+    font-size: .6rem;
+    align-self: flex-start;
+}
+.recipe-filter {
+    width: 25vw; 
+}
+.recipe-filter-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    border: solid 1px #E2E3E3;
+}
+.search-text-input {
+    width: 100%;    
+    height: 40px;
+}
+.search-recipe-icon {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20vw;
+}
+.courses-checkboxes {
+    list-style-type: none; /*FOR UNORDERED LIST BULLET POINTS HIDDED*/
+    margin-left: -20px;
+}
+.course-checkbox-item {
+    padding: 15px 5px;
+}
+.sub-banner {
+    background-image: linear-gradient(to bottom right, white, white, white, #A8FFD5);
+    padding: 20px 10vw;
+}
+.food-review-banner {
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+.flex-end-align {
+    align-self: flex-end;
+}
+.quote-and-contact {
+    display: flex;
+    justify-content: space-between;
+}
+.quote {
+    width: 40vw;
+}
+.contact-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: black;   
+}
+footer {
+    background-image: linear-gradient(to bottom right, white, white, white, #A8FFD5);
+    padding: 20px 10vw;
+    height: 50px;
+    display: flex;  
+    justify-content: space-between;
+}
+.links-and-copyright {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: bold;
+    width: 100%;
+}
+.footer-links > li > a {
+    text-decoration: none;
+    color: black;
+}
+

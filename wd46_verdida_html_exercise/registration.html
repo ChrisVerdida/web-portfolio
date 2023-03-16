@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+    </head>
+    
+    <body background="Pastel.jpg" style="max-width: 500px; margin: auto; padding: 100px;">
+        <a href="login.html">Go Back To Login Page</a>
+        <h1 style="text-align: center;">Registration Form</h1>
+       <br> <!--LOGIN DETAILS-->
+        <form action="aboutme.html">
+            <fieldset>
+                <legend>Login Details <span style="color: red;">(all fields should be required)</span></legend>
+                <table>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="text" id="email" name="email" 
+                            placeholder="Enter Email" required></td>
+                    </tr>
+                    <tr>
+                       <td><label for="psw">Password:</label></td>
+                       <td><input type="password" name="psw" id="psw" 
+                        placeholder="Enter Password" required></td>
+                    </tr><br>
+                    <tr>
+                        <td><label for="confirm-password">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm-password" name="confirm-password" 
+                            placeholder="Enter Confirm Password" required></td>
+                    </tr>
+                </table>
+            </fieldset><br><br>
+
+            <fieldset> <!--USER DETAILS-->
+                <legend>User Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="photos">Photos:</label></td>
+                        <td><input type="file" name="photos" id="photos" accept=".jpg, .jpeg, .png," 
+                            multiple required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td><input type="text" name="first-name" id="first-name" 
+                            placeholder="Enter Name" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td><input type="text" name="last-name" id="last-name" 
+                            placeholder="Enter last Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" 
+                            placeholder="Enter Age" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birth-date">Birthday:</label></td>
+                        <td><input type="date" name="birth-date" id="birth-date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Device Used:</td>
+                        <td>                          
+                            <select name="device" id="device">
+                                <option value="windows">Windows</option>
+                                <option value="macos">MacOS</option>
+                            </select><br>    
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <tr>
+                <input type="checkbox" name="accept-terms-condition" id="accept-terms-condition" required>
+                <label for="accept-terms-condition">I accept the terms & conditions</label><br>
+            </tr>
+
+            <tr>            
+                <button type="submit" class="registerbtn">Register</button>
+                <!--<input type="submit" name="submited" id="submited" value="Register">-->            
+            </tr>
+        </form>
+    </body>
+</html>

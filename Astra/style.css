@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+header {
+    background-color: whitesmoke;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.website-logo {
+    margin: 10px;
+    margin-left: 55px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.navigation {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.nav-link:hover {
+    color:  rgb(177, 23, 177);
+}
+.hire-me {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.hire-me-button {
+    background-color: rgb(177, 23, 177);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+}
+main {
+    background-color: whitesmoke;
+    height: 600px;
+}
+ul {
+    width: 100px;
+    position: absolute;
+    overflow: hidden;
+}
+.socmed-buttons {
+    position: absolute;
+    top: 25%;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.socmed-buttons li {
+    list-style-type: none;
+    padding: 20px;
+    transition: .6s;
+    color: rgb(177, 23, 177);
+    position: relative;
+}
+.socmed-buttons li i {
+    font-size: 20px;
+}
+.socmed-buttons li:hover {
+    padding: 20px 40px;
+}
+.socmed-buttons li:nth-child(1) {
+    background-color: whitesmoke;
+}
+.socmed-buttons li:nth-child(2) {
+    background-color: whitesmoke;
+}
+.socmed-buttons li:nth-child(3) {
+    background-color: whitesmoke;
+}
+.socmed-buttons li:nth-child(4) {
+    background-color: whitesmoke;
+}
+.content {
+    padding-top: 140px; 
+}
+.content .introduction {
+    background-color: whitesmoke;
+    width: 500px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    margin-left: 130px;
+}
+.content .introduction h1 {
+    width: 500px;
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    font-family: 'Alex Brush', cursive;
+}
+.content .introduction p {
+    max-width: 100%;
+    width: 480px;
+    color: black;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.learn-more {
+    width: 200px;
+    height: 100%;
+}
+.learn-more-button {
+    background-color: rgb(177, 23, 177);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 15px 32px;
+}
+.content-image {
+    background-color: whitesmoke;
+    width: 800px;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    position: absolute;
+}
+.content-image > img {
+    height: 100%;
+    margin-right: 200px;
+}
