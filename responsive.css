@@ -1,0 +1,57 @@
+@media only screen and (min-width: 576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        font-family: sans-serif;
+        cursor: url(Images/BlackCursorFirst.png), auto;
+        overflow-x: hidden !important;
+    }
+    #about-me-section .profile {
+        height: 60%;
+    }
+    #about-me-section .technologies {
+        margin-right: 200px;
+        margin-left: 50px;
+    }
+    #projects-section .card-text h3 {
+        font-family: 'Tilt Warp', cursive;
+        color: #FCA311;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #projects-section .card:hover .card-text {
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width: 1159px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        font-family: sans-serif;
+        cursor: url(Images/BlackCursorFirst.png), auto;
+        overflow-x: hidden !important;
+    }
+    #about-me-section .profile {
+        height: 100%;
+    }
+    #about-me-section .technologies {
+        margin-right: 300px;
+        margin-left: 50px;
+    }
+    #projects-section .card-text h3 {
+        font-family: 'Tilt Warp', cursive;
+        color: #FCA311;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    #projects-section .card:hover .card-text {
+        top: 80px;
+    }
+}

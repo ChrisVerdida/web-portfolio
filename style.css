@@ -381,6 +381,7 @@ html, body {
     color: #FCA311;
     font-size: 3rem;
     font-weight: 600;
+    cursor: url(Images/BlackCursorSecond.png), auto;
 }
 #projects-section .card:hover .card-text {
     top: 80px;
