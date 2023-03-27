@@ -128,8 +128,8 @@ html, body {
 #home-section .home-title-introduction {
     font-family: 'Dancing Script', cursive;
     color: black;
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 1000;
+    font-size: 1.7rem;
 }
 #home-section .bottom-img {
     margin-top: 320px;
@@ -221,12 +221,12 @@ html, body {
     font-family: 'Tilt Warp', cursive;
     color: black;
     font-size: 1.875rem;
-    font-weight: 600;
+    font-weight: 800;
 }
 #about-me-section .card-text {
     font-family: 'Dancing Script', cursive;
     color: black;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.25rem;
 }
 #about-me-section .technologies {
@@ -256,14 +256,14 @@ html, body {
 #skills-section .skill-text {
     font-family: 'Dancing Script', cursive;
     color: black;
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 800;
+    font-size: 1.60rem;
 }
 #skills-section .fullname > h2 {
     font-family: 'Tilt Warp', cursive;
     color: black;
     font-size: 4.375rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 100px;
 }
 #surname-second {
